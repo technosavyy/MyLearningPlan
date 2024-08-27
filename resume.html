@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Resume Generator</title>
+    <link rel="stylesheet" type="text/css" href="E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\resumeCSS\resumeStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+</head>
+<body style="background-image: url('E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\images\image downloaded.jpg') ;">
+<body style="background-image: url('E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\images\images.jpeg');">
+    <div class="resume-form" id="resume-form">
+        <div class="panel">
+            <h1 id="letter1">Resume builder</h1>
+            <h2 id="letter2">Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span id="name-error" class="error"></span>
+            <br><br>
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" name="phone-number" required>
+            <span id="phone-number-error" class="error"></span>
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>
+            <span id="email-error" class="error"></span>
+            <br><br>
+            <label for="linkedin">Linkedin Profile:</label>
+            <input type="text" id="linkedin" name="linkedin" required>
+            <span id="linkedin-error" class="error"></span>
+            <br><br>
+        </div>
+        <div class="panel2">
+            <h2 id="letter3">Objectives</h2>
+            <label for="objectives">Objectives and Summary:</label>
+            <textarea id="objectives" name="objectives" rows="5" cols="25"></textarea>
+            <br><br>
+            <label for="teachingexp">Teaching Experience:</label>
+            <textarea name="teachingexp" id="teachingexp" cols="25" rows="5"></textarea>
+            <br><br>
+            <label id="education" for="education" class="education-label">Education:</label>
+            <div class="education-entry">
+                <input type="text" id="education-institution" class="education-institution" placeholder="Institution" required>
+                <input type="text" id="education-degree" class="education-degree" placeholder="Degree" required>
+                <input type="text" id="education-from-date" class="education-from-date" placeholder="From" required>
+                <input type="text" id="education-to-date" class="education-to-date" placeholder="To" required>
+                <input type="text" id="education-percentage-cgpa" class="education-percentage-cgpa" placeholder="Percentage/CGPA" required>
+                <button class="remove-education">Remove</button>
+            </div>
+            <button id="add-education">Add Education</button>
+            <br><br>
+            <label for="skills">Skills:</label>
+            <textarea name="skills" id="skills" cols="25" rows="5"></textarea>
+            <br><br>
+            <label for="professional">Professional Development:</label>
+            <textarea name="professional" id="professional" cols="25" rows="5"></textarea>
+            <br><br>
+            <label for="honors">Honors/Rewards:</label>
+            <textarea name="honors" id="honors" cols="25" rows="5"></textarea>
+            <br><br>
+            <label for="reference">Reference:</label>
+            <textarea name="reference" id="reference" cols="25" rows="5"></textarea>
+            <br>
+        </div>
+        <button id="export-pdf">Export to PDF</button>
+        <button id="submit">Submit</button>
+        </button>
+    </div>
+    <a href="index.html">
+        <img src="E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\images\images.jpeg" alt="image" class="position">
+      </a>
+    <script type='text/javascript' src="E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\resumeJS\resume.Script.js"></script>
+</body>
+</body>
+</html>

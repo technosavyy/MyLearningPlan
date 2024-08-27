@@ -1,0 +1,22 @@
+body {
+    font-family: 'Merriweather', sans-serif;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-heading {
+    text-align: center;
+    color: #058521; /* Green text color */
+    font-size: 2.5em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000; /* Regular shadow effect */
+}
+
+.custom-heading.blue {
+    color: #8c00ff; /* Blue text color for the blue class */
+}

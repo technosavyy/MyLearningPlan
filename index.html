@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\resumeCSS\style.css">
+  
+</head>
+<body>
+  <page size="A4">
+    <div class="container">
+      <div class="leftPanel">
+        <label for="profileImage">
+          <div class="fakeImage" >
+            <img id="profileImg" src="E:\projects\ritcs-resume-crafter\ritcs-resume-crafter\ritcs-resume-crafter\images\profile.png" alt="Profile Image"/>
+            <div class="overlayText">Click to Change Image</div>
+          </div>
+        </label>
+        <input type="file" id="profileImage" style="display: none;" accept="image/*"/>
+        <div class="details">
+          <div class="item bottomLineSeparator">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="smallText">
+              <p contenteditable="true">
+                <i class="fa fa-phone contactIcon" aria-hidden="true"></i> (+33) 777 777 77
+              </p>
+              <p contenteditable="true">
+                <i class="fa fa-envelope contactIcon" aria-hidden="true"></i>
+                <a href="mailto:lorem@ipsum.com@gmail.com">lorem@ipsum.com</a>
+              </p>
+              <p contenteditable="true">
+                <i class="fa fa-map-marker contactIcon" aria-hidden="true"></i> New York, USA
+              </p>
+              <p contenteditable="true">
+                <i class="fa fa-linkedin-square contactIcon" aria-hidden="true"></i>
+                <a href="#">in/loremipsum</a> 
+              </p>
+            </div>
+          </div>
+          <div class="item bottomLineSeparator">
+            <h2>SKILLS</h2>
+            <div class="smallText">
+              <ul contenteditable="true">
+                <li>teaching</li>
+                <li>Word</li>
+                <li>Powerpoint</li>
+                <li>Accounting</li>
+                <li>Marketing</li>
+                <li>Photoshop</li>
+                <li>French</li>
+                <li>English</li>
+                <li>Management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <h2>OBJECTIVES & SUMMARY</h2>
+            <div class="smallText">
+              <p contenteditable="true">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt molestiae cupiditate autem facere est eligendi praesentium vitae eos voluptates! Eum, dolore hic? Illum alias, odit nostrum dignissimos sit culpa
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightPanel">
+        <div>
+          <h1 contenteditable="true">YOUR NAME</h1>
+          <div class="smallText">
+            <h3 contenteditable="true">teacher</h3>
+          </div>
+        </div>
+        <div>
+          <h2>PROFESSIONAL EXPERIENCE</h2>
+          <div class="smallText">
+            <p contenteditable="true">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris venenatis, justo sed feugiat pulvinar., quam ipsum tincidunt enim, ac gravida est metus sit amet neque. Curabitur ut arcu ut nunc finibus accumsan id id elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio error ducimus neque pariatur fugiat, vitae nemo necessitatibus sunt quod magni! Voluptatibus obcaecati ipsam sint pariatur soluta, quos odit. Quia, consequuntur.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor blanditiis placeat in, ad ipsam praesentium. Qui, tempora, numquam natus, fugiat architecto possimus consequatur ipsa voluptatum ea perspiciatis et optio sint. 
+            </p>
+          </div>
+        </div>
+        <div class="workExperience">
+          <h2>teaching experience</h2>
+          
+        </div>
+      </div>
+    </div>
+  </page>
+  <a href="resume.html">  
+    <button class="goback">Go back</button>
+  </a>
+  <button id="printButton">Print this page</button>
+  <script src="script.js"></script>
+  <script>
+    const profileImg = document.getElementById('profileImg');
+    const profileInput = document.getElementById('profileImage');
+
+    profileInput.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = function() {
+        profileImg.src = reader.result;
+      };
+
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    });
+
+    const printButton = document.getElementById('printButton');
+    printButton.addEventListener('click', function() {
+      window.print();
+    });
+  </script>
+</body>
+</html>
