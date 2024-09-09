@@ -1,2 +1,1 @@
-# ritcs-resume-crafter
-Generate automatic resume from the given input 
+# This is my learning repo
