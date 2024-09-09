@@ -35,7 +35,7 @@ $(document).ready(function () {
 
     });
 
-    $('#exportBtn').on('click', function () {
+    $('exportBtn').on('click', function () {
         window.jsPDF = window.jspdf.jsPDF;
         var doc = new jsPDF();
         var formData = $('#candidateForm').serializeArray();
@@ -47,4 +47,4 @@ $(document).ready(function () {
     });
 
 }
-);
+);   
