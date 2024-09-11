@@ -3,7 +3,7 @@ let b=2;
   
 setTimeout(function (params) {
     console.log('Timeout:' + a )
-},100)
+},)
 
 a = 10;
 fetch('/').then(function (params) {
@@ -24,7 +24,7 @@ async function sairam(params) {
 
     let bangaloreClimate= new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("27 deg")
+            resolve("21 deg")
         }, 2000);
     })
 
